@@ -1,0 +1,52 @@
+# ==========================================
+# 1. DONNÉES ET MODÈLES (CRUCIAL)
+# ==========================================
+# On ignore les datasets qui sont trop lourds pour GitHub
+data/
+!data/**/.gitkeep
+
+# On ignore les modèles entraînés (fichiers volumineux)
+models/
+!models/**/.gitkeep
+*.h5
+*.keras
+*.pb
+
+# ==========================================
+# 2. CACHE PYTHON ET ENVIRONNEMENT
+# ==========================================
+# Fichiers compilés Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels (ne jamais envoyer le dossier de tes librairies)
+venv/
+env/
+.env/
+.venv/
+
+# ==========================================
+# 3. JUPYTER NOTEBOOKS & TESTS
+# ==========================================
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ==========================================
+# 4. SÉCURITÉ
+# ==========================================
+# Ignorer les fichiers contenant des variables d'environnement ou mots de passe
+.env
+
+# ==========================================
+# 5. FICHIERS SYSTÈME (OS)
+# ==========================================
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
